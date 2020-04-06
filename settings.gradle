@@ -1,0 +1,2 @@
+include ':app', ':dialogFrame'
+rootProject.name='XDialog'

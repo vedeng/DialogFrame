@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_title_bar"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_center_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#99999999"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:text="中间弹窗1"/>
+
+        <TextView
+            android:id="@+id/tv_center_dialog2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#99999999"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:text="中间弹窗2"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_top_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#99996699"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:text="顶部弹窗1"/>
+
+        <TextView
+            android:id="@+id/tv_top_dialog2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#99996699"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:text="顶部弹窗2"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_bottom_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#999999dd"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:text="底部弹窗1"/>
+
+        <TextView
+            android:id="@+id/tv_bottom_dialog2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#999999dd"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:text="底部弹窗2"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_toast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#993399dd"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:text="中间吐司1"/>
+
+        <TextView
+            android:id="@+id/tv_toast2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#993399dd"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:text="底部吐司"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_rich_toast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#9999aa66"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:text="带图标吐司"/>
+
+        <TextView
+            android:id="@+id/tv_select_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#9999aa66"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:text="图片选择弹窗"/>
+
+    </LinearLayout>
+
+</LinearLayout>
