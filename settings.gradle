@@ -1,2 +1,2 @@
 include ':app', ':dialogFrame'
-rootProject.name='XDialog'
+rootProject.name='DialogFrame'
