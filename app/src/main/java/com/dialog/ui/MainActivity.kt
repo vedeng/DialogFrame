@@ -5,7 +5,6 @@ import android.view.View
 import android.widget.ImageView
 import android.widget.LinearLayout
 import androidx.core.content.ContextCompat
-import com.blankj.utilcode.util.ToastUtils
 import com.dialog.R
 import com.dialog.BaseActivity
 import com.xdialog.*
@@ -36,7 +35,7 @@ class MainActivity : BaseActivity() {
                 .setCancelTextColor(ContextCompat.getColor(this, R.color.colorPrimaryDark))
                 .setListener(object : DialogListener {
                     override fun doEnter(view: Dialog?) {
-                        ToastUtils.showShort("点击-好的~")
+                        XToast(this@MainActivity).setText("点击-好的~").show()
                     }
                 })
                 .build()
@@ -124,9 +123,9 @@ class MainActivity : BaseActivity() {
         }
         tv_select_pic?.setOnClickListener {
             PicPickerDialog(this, View.OnClickListener {
-                ToastUtils.showShort("打开拍照~")
+                XToast(this).setText("打开拍照~").show()
             }, View.OnClickListener {
-                ToastUtils.showShort("~打开图库")
+                XToast(this).setText("~打开图库").show()
             }).show(supportFragmentManager, "PicPicker")
         }
     }

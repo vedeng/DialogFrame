@@ -12,7 +12,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
 import androidx.annotation.ColorInt
-import com.blankj.utilcode.util.SizeUtils
 
 /**
  * 弹窗工具
@@ -49,7 +48,8 @@ class ViewDialog(private val mCtx: Context) {
     private var contentLayout: LinearLayout? = null
 
     private fun getDp(dpValue: Float): Int {
-        return SizeUtils.dp2px(dpValue)
+        val scale = mCtx.resources.displayMetrics.density
+        return (dpValue * scale + 0.5f).toInt()
     }
 
     /**
