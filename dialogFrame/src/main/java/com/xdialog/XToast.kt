@@ -31,8 +31,8 @@ class XToast(val context: Context) {
         windowManager = context.getSystemService(Context.WINDOW_SERVICE) as? WindowManager
         windowParams = WindowManager.LayoutParams()
         // 配置一些默认的参数
-        windowParams?.height = ViewGroup.LayoutParams.MATCH_PARENT
-        windowParams?.width = ViewGroup.LayoutParams.MATCH_PARENT
+        windowParams?.height = ViewGroup.LayoutParams.WRAP_CONTENT
+        windowParams?.width = ViewGroup.LayoutParams.WRAP_CONTENT
         windowParams?.format = PixelFormat.TRANSLUCENT
         windowParams?.windowAnimations = android.R.style.Animation_Toast
         windowParams?.gravity = Gravity.CENTER
